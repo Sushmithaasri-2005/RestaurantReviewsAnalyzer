@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height:auto;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-right: 10px;
+    height: 35px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#csvTable,#sentiTable{
+    margin-top: 20px;
+    height: 500px;
+    overflow: scroll;
+    width: 65%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.pie,#vertical_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:35%;
+    height: 500px;
+}
+
+#csvTable::-webkit-scrollbar{
+    appearance: none;
+    display: none;
+}
+
+#sentiTable::-webkit-scrollbar{
+    appearance: none;
+    display: none;
+}
+
+.mlc,.bert{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+canvas{
+    width:50%;
+    height:80%;
+}
+
+.bert_title{
+    margin-top: 10px;
+}

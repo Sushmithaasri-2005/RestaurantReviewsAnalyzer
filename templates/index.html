@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Review Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Restaurant Review Analysis</h1>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        <h2 style="display: none;" id="report_title">Multi Label Classification Report</h2>
+        <div class="mlc">
+            <div id="csvTable"></div>
+            <div class="pie">
+               <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+        <h2 style="display: none;" id="bert_title">Aspect Based Sentiment Analysis</h2>
+        <div class="bert">
+            <div id="sentiTable"></div>
+            <div id="vertical_bar">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
